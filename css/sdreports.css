@@ -1,0 +1,112 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #e8e8e8;
+  overflow: hidden;
+}
+
+html ::-webkit-scrollbar {
+    width: 7px;
+    height: 14px;
+}
+html ::-webkit-scrollbar-thumb {
+    background: rgba(51,51,69,.7);
+    border-radius: 3.5px;
+}
+html ::-webkit-scrollbar-track {
+    background: rgba(184,184,190,.85);
+    border-radius: 3.5px;
+}
+
+.Main {
+	width: 100%;
+	height: 100%;
+	background: white;
+	display: flex;
+}
+
+.logo {
+	margin-top: 4px;
+	margin-left: 6px;
+	margin-right: 6px;
+	width: 228px;
+	height: 48px;
+	background-image: url("sdlogo.svg");
+	background-repeat: no-repeat;
+}
+
+.LeftPanel {
+	max-width: 240px;
+	height: 100%;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	flex-basis: min-content;
+	flex: 1;
+}
+
+.LeftPanel div {
+	vertical-align: top;
+}
+
+#viewerContent {
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+}
+
+div.Buttons {
+	width: 240px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	position: absolute;
+	top: 52px;
+	bottom: 4px;
+	border-top: 2px solid rgba(184,184,190,.85);
+}
+
+a.ReportButton {
+	width: 100%;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+	margin: 0;
+	padding: 15px 0 15px 0;
+}
+
+a.ReportButton.Selected {
+	background: #1f4690dd;
+}
+
+a.ReportButton.Over {
+	background: white;
+	background: #1f469022;
+}
+
+a.ReportButton table {
+	margin: 5px auto;
+}
+
+a.ReportButton img {
+	text-align: center;
+	border: 2px solid #1f4690;
+	margin : 3px;
+}
+
+a.ReportButton td.Caption {
+	padding: 0 5px 0 5px;
+	font-family: Arial;
+	font-size: 11pt;
+	color: dimgray;
+	display: block;
+	text-align: center;
+}
+
+a.ReportButton.Selected td.Caption {
+	color: white;
+}
+
+a.ReportButton.Over td.Caption {
+	color: #1f4690;
+}
